@@ -12,3 +12,4 @@ t/pod.t
 Makefile.PL
 META.yml
 META.json
+LICENSE

@@ -4,7 +4,8 @@ use Module::Build;
 
 my $builder = Module::Build->new(
     module_name         => 'Acme::Be::Modern',
-    license             => 'gpl',
+    license             => 'GPL_3',
+    create_license      => 1,
     dist_author         => q{Søren Lund <slu@cpan.org>},
     dist_version_from   => 'lib/Acme/Be/Modern.pm',
     requires => {
@@ -17,6 +18,7 @@ my $builder = Module::Build->new(
     },
     configure_requires  => { 
         'Module::Build' => 0.38,
+        'Software::License' => 0,
     },
     add_to_cleanup      => [ 'Acme-Be-Modern-*' ],
     create_makefile_pl => 'traditional',

@@ -1,4 +1,7 @@
 Revision history for Acme-Be-Modern
 
+0.02    Fri Aug 19 15:49:05 2011
+        Updated to GPL 3 configured Module::Build to generate the LICENSE file.
+
 0.01    Wed Aug 17 15:28:15 2011
         First version, released on an unsuspecting world.
