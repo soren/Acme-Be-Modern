@@ -4,7 +4,7 @@ use Module::Build;
 
 my $builder = Module::Build->new(
     module_name         => 'Acme::Be::Modern',
-    license             => 'gpl_3',
+    license             => 'gpl3',
     create_license      => 1,
     dist_author         => q{Søren Lund <soren@lund.org>},
     dist_version_from   => 'lib/Acme/Be/Modern.pm',
