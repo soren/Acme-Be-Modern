@@ -15,6 +15,7 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => 0,
         'Module::Loaded' => 0,
+        'Test::CheckManifest' => 0
     },
     configure_requires  => { 
         'Module::Build' => 0.38,
