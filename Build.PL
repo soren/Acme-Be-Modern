@@ -4,9 +4,9 @@ use Module::Build;
 
 my $builder = Module::Build->new(
     module_name         => 'Acme::Be::Modern',
-    license             => 'GPL_3',
+    license             => 'gpl_3',
     create_license      => 1,
-    dist_author         => q{Søren Lund <slu@cpan.org>},
+    dist_author         => q{Søren Lund <soren@lund.org>},
     dist_version_from   => 'lib/Acme/Be/Modern.pm',
     requires => {
         'Filter::Util::Call' => 0,
