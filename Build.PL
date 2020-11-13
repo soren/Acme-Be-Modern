@@ -24,8 +24,17 @@ my $builder = Module::Build->new(
     add_to_cleanup      => [ 'Acme-Be-Modern-*' ],
     create_makefile_pl => 'traditional',
     meta_merge => {
-        resources => { bugtracker => 'https://github.com/soren/Acme-Be-Modern/issues',
-                       repository => 'https://github.com/soren/Acme-Be-Modern/'}
+        'meta-spec' => { version => 2 },
+        resources => {
+            repository => {
+                type => 'git',
+                url => 'https://github.com/soren/Acme-Be-Modern.git',
+                web => 'https://github.com/soren/Acme-Be-Modern/'
+            },
+            bugtracker => {
+                web => 'https://github.com/soren/Acme-Be-Modern/issues'
+            }
+        }
     }
 );
 
